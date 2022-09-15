@@ -18,8 +18,12 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         DB::table('todos')->insert([
-            'content' => 'Task-'.Str::random(10),
+            'content' => 'Task-Demo#1',
             'status' => 'task',
+        ]);
+        DB::table('todos')->insert([
+            'content' => 'Task-Demo#2',
+            'status' => 'in-progress',
         ]);
     }
 }
